@@ -25,9 +25,9 @@ To get you started you can simply fork the [rails-interview][rails-interview] re
 You need to have git installed locally so you can clone your fork of the ng-interview repository. You can get git from
 [http://git-scm.com/](http://git-scm.com/).
 
-### Fork and Clone ng-interview
+### Fork and Clone rails-interview
 
-Fork the [rails-interview][ng-interview] repository on GitHub.
+Fork the [rails-interview][rails-interview] repository on GitHub.
 If you are unfamiliar with forking, [follow these instructions](http://lmgtfy.com/?q=how+to+fork+a+repo+in+github).
 
 Then clone your repository locally using [git][git]:
