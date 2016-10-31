@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstname: Jimmy
+  lastname: Butler
+  favoritefood: Onion Soup
+  favoritecolor: Yellow
+  favoritemovie: Orange County
+
+two:
+  firstname: Jimmy
+  lastname: Garrapolo
+  favoritefood: Tempura shrimp
+  favoritecolor: Thistle
+  favoritemovie: Taboo
+
+three:
+  firstname: Tom
+  lastname: Brady
+  favoritefood: Eggs
+  favoritecolor: Elmer
+  favoritemovie: Elysium
+
+four:
+  firstname: Kobe
+  lastname: Bryant
+  favoritefood: Rottini
+  favoritecolor: Red
+  favoritemovie: Radio
+
+five:
+  firstname: Shaquille
+  lastname: O'Neal
+  favoritefood: Veal
+  favoritecolor: Violet
+  favoritemovie: V for Vendetta
+
+six:
+  firstname: Joey
+  lastname: Galloway
+  favoritefood: Onion Soup
+  favoritecolor: Red
+  favoritemovie: Taboo

@@ -1,0 +1,15 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>FavoriteMovie</th>
+  </tr>
+ 
+  <% @students.each do |student| %>
+    <tr>
+      <td><%= student.name %></td>
+      <td><%= student.movie %></td>
+    </tr>
+  <% end %>
+</table>
