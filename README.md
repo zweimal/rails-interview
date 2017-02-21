@@ -28,7 +28,7 @@ You need to have git installed locally so you can clone your fork of the ng-inte
 ### Fork and Clone rails-interview
 
 Fork the [rails-interview][rails-interview] repository on GitHub.
-If you are unfamiliar with forking, [follow these instructions](http://lmgtfy.com/?q=how+to+fork+a+repo+in+github).
+If you are unfamiliar with forking, [follow these instructions](https://help.github.com/articles/fork-a-repo) provided by GitHub.
 
 Then clone your repository locally using [git][git]:
 
