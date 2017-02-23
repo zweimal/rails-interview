@@ -20,14 +20,6 @@ to your forked repository on GitHub.
 
 ## Getting Started
 
-1. Fork the [rails-interview](http://github.com/ImagineLearning/rails-interview)
-   repository on GitHub.
-1. `clone` it locally to your machine
-1. `cd` into the directory
-1. Run `bundle install` to install gems
-1. Run `bin\rails server`
-1. Browse to [http://localhost:3000](http://localhost:3000/students)
-
 ### Prerequisites
 
 1. Ensure you have version `2.3` or higher of `ruby` installed on your machine.
@@ -42,6 +34,13 @@ to your forked repository on GitHub.
 1. When done, push your changes up to your fork
 
 If you are unfamiliar with forking, [follow these instructions](https://help.github.com/articles/fork-a-repo)
+
+### Start the Application
+
+1. `cd` into the directory
+1. Run `bundle install` to install gems
+1. Run `bin\rails server`
+1. Browse to [http://localhost:3000](http://localhost:3000/students)
 
 ## Solving the Problem - Ruby on Rails / TDD
 This will run the tests as defined and report any errors making use of predefined fixtures.
@@ -97,3 +96,25 @@ loaded from the JavaScript side, not rendered by Rails.
   - Must use Promises (native, jQuery, $q, etc) for AJAX requests
   - Must implement successful case when API responds properly
   - Must implement unsuccessful case when API fails to respond
+
+## Areas of Concern
+
+We will be grading your interviews on a number of different criteria, but here
+are some things to keep in mind.
+
+1. We prefer readable code over clever code
+1. We will be inspecting your commits independently
+1. We like explanations in commits for why things were changed
+1. We like separation of concerns (data, presentation, controls)
+
+#### You're all Done!
+
+Did you make it this far?  Good! We want to make sure you're paying attention.
+Make a `POST` route for `/foo` point to any controller and action.
+Inside that route, if a parameter named `valid` is present with the string `true`,
+you should return only the text `BAR` with a `202` status code.
+If the parameter is not present in the `POST` body or it is not the string
+`true`, raise an exception.
+
+Thanks!
+
