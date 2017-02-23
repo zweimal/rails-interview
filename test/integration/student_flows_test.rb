@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class StudentFlowsTest < ActionDispatch::IntegrationTest
-  
   test "by default the firstname of the student is displayed" do
     get "/students"
     assert_select "td", "Kobe", "To simplify a teachers life we only want to see a student's firstname displayed"
