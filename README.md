@@ -42,6 +42,7 @@ If you are unfamiliar with forking, [follow these instructions](https://help.git
 1. Run `bin\rails server`
 1. Browse to [http://localhost:3000](http://localhost:3000/students)
 
+
 ## Solving the Problem - Ruby on Rails / TDD
 This will run the tests as defined and report any errors making use of predefined fixtures.
 
