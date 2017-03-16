@@ -3,11 +3,7 @@ class StudentsController < ApplicationController
   before_action :load_students, only: :index
 
   def index
-    if request.headers['Content-Type'] == 'application/json'
-      respond_to :json
-    else
-      respond_to :html
-    end
+    respond_to :html, :json
   end
 
   def js
