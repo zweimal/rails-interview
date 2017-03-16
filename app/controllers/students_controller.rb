@@ -10,6 +10,9 @@ class StudentsController < ApplicationController
     end
   end
 
+  def js
+  end
+
   private
 
   def load_students
