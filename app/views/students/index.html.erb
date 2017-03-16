@@ -1,15 +1,31 @@
-<h1>Listing students</h1>
+<div class="container-fluid">
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>FavoriteMovie</th>
-  </tr>
+  <div class="panel">
+    <div class="panel-heading">
+      <h1>Listing students (rails version)</h1>
+    </div>
 
-  <% @students.each do |student| %>
-    <tr>
-      <td><%= student.name %></td>
-      <td><%= student.favoritemovie %></td>
-    </tr>
-  <% end %>
-</table>
+    <div class="panel-body">
+      <table class="table">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Favorite Movie</th>
+          <th>Favorite Food</th>
+          <th>Favorite Color</th>
+        </tr>
+
+        <% @students.each do |student| %>
+          <tr>
+            <td><%= student.id %></td>
+            <td><%= student.name %></td>
+            <td><%= student.favoritemovie %></td>
+            <td><%= student.favoritefood %></td>
+            <td><%= student.favoritecolor %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+</div>
