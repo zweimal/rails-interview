@@ -9,8 +9,8 @@ class StudentFlowsTest < ActionDispatch::IntegrationTest
 
   test "duplicate first names have first initial of last name appended" do
     get "/students"
-    assert_select "td", "Jimmy B.", "There is another student with a firstname of Jimmy and so the last character of my lastname is added to differentiate me"
-    assert_select "td", "Jimmy G.", "There is another student with a firstname of Jimmy and so the last character of my lastname is added to differentiate me"
+    assert_select "td", "Jimmy B.", "There is another student with a firstname of Jimmy and so the first character of my lastname is added to differentiate me"
+    assert_select "td", "Jimmy G.", "There is another student with a firstname of Jimmy and so the first character of my lastname is added to differentiate me"
     assert_select "tr", {count: 7}, "All students are returned including a header row"
   end
 
