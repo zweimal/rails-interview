@@ -1,5 +1,18 @@
 class StudentsController < ApplicationController
+
+  before_action :load_students, only: :index
+
   def index
+    if request.headers['Content-Type'] == 'application/json'
+      respond_to :json
+    else
+      respond_to :html
+    end
+  end
+
+  private
+
+  def load_students
     movie = student_params[:movie]
     @students = if movie.present?
         Student.where student_table[:favoritemovie].matches("%#{movie}%")
@@ -7,8 +20,6 @@ class StudentsController < ApplicationController
         Student.all
       end
   end
-
-  private
 
   def student_params
     params.permit(:movie)
