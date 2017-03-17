@@ -1,1 +1,1 @@
-receta = angular.module('interview', [])
+window.interviewApp = angular.module('interview', [])
