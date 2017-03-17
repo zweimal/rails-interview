@@ -12,16 +12,16 @@ class StudentsController < ApplicationController
   private
 
   def load_students
-    movie = student_params[:movie]
-    @students = if movie.present?
-        Student.where student_table[:favoritemovie].matches("%#{movie}%")
-      else 
-        Student.all
-      end
+    @students = Student.where student_filters
+  end
+
+  def student_filters
+    filters = student_params.collect { |key, value| student_table["favorite#{key}"].matches("%#{value}%") }
+    filters.inject :and
   end
 
   def student_params
-    params.permit(:movie)
+    params.permit(:movie, :food, :color)
   end
 
   def student_table
